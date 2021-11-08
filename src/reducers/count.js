@@ -3,7 +3,7 @@ import { INCREMENT, DECREMENT } from '../actions'
 const initailState ={ value:0 }
 
 
-export defalut (state = initailState , action) => {
+export default (state = initailState , action) => {
   switch (action.type) {
     case INCREMENT:
       return { value: state.value + 1 }
